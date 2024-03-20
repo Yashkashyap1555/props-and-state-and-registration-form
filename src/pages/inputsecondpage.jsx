@@ -25,11 +25,16 @@ const InputSecondPage = () => {
     // jab object ke ander value pas karni hai to (...spreadoperator) and [name] : value to pas the all value in object then it is on itF
   };
 
-  const ChangeSubmit =(e)=> {
-    e.preventDefault()
-    setAlluserDetails([
-      ...allUserdetails, details
-    ]);
+  const ChangeSubmit = (e) => {
+    e.preventDefault();
+    setAlluserDetails([...allUserdetails, details]);
+  };
+
+  const handleDelete = (data1) => {
+    console.log(data1, "delete");
+    const filtered = allUserdetails.filter((value, i) => i !== data1);
+    console.log(filtered, "confirm delete");
+    setAlluserDetails(filtered);
   };
 
   const { name, password, email } = details;
@@ -77,17 +82,17 @@ const InputSecondPage = () => {
             <th>Email</th>
             <th>Password</th>
           </tr>
-            {allUserdetails?.map((value, i) =>(
-                <tr key={i}>
-                <td>{value.name}</td>
-                <td>{value.email}</td>
-                <td>{value.password}</td>
-              </tr>
-            )
+          {allUserdetails?.map((value, i) => (
+            <tr key={i}>
+              <td>{value.name}</td>
+              <td>{value.email}</td>
+              <td>{value.password}</td>
 
-            )}
-          
-
+              <td>
+                <button onClick={() => handleDelete(i)}>delete</button>
+              </td>
+            </tr>
+          ))}
         </table>
       </div>
     </>

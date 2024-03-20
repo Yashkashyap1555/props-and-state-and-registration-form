@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import FirstPage from './pages/firstpage';
-import SecondComponent from './component/secondcomponent';
-import InputPage from './pages/inputpage';
-import InputSecondPage from './pages/inputsecondpage';
+// import FirstPage from './pages/firstpage';
+// import SecondComponent from './component/secondcomponent';
+// import InputPage from './pages/inputpage';
+// import InputSecondPage from './pages/inputsecondpage';
+import InputPageThird from './component/inputpage3';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     {/* <FirstPage /> */}
     {/* <SecondComponent /> */}
     {/* <InputPage /> */}
-    <InputSecondPage />
+    {/* <InputSecondPage /> */}
+    <InputPageThird />
     </div>
   );
 }
