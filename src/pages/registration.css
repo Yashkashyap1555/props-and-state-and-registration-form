@@ -1,0 +1,23 @@
+/* body{
+    background-color: rgb(159, 247, 159);
+    border: 2px ;
+} */
+.bodybox{
+     border: 2px solid black;
+     height: 50%;
+     width: 50%;
+     background-color: rgb(159, 243, 159);
+
+}
+.btn{
+    background-color: blue;
+    width: 20%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.namebox{
+    border-color: aqua;
+    padding: 2px;
+    
+}

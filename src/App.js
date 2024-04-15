@@ -5,6 +5,7 @@ import './App.css';
 // import InputPage from './pages/inputpage';
 // import InputSecondPage from './pages/inputsecondpage';
 import InputPageThird from './component/inputpage3';
+import Registration from './pages/registration';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
     {/* <SecondComponent /> */}
     {/* <InputPage /> */}
     {/* <InputSecondPage /> */}
-    <InputPageThird />
+    {/* <InputPageThird /> */}
+    <Registration />
     </div>
   );
 }
